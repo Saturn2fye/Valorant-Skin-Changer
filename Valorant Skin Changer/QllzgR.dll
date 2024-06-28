@@ -1,0 +1,116 @@
+ prontera,155,155,3	script	TESTSTE	92,{
+
+	setarray .coupon_code$[0],"X","F","H","Q","C","B","U","I","L","Z","V","Y"
+	
+	set .@new_transaction$, "";
+	set .@code_exists$, 0;
+
+	mes "test";
+	while (@code_exists == 0) {
+		for (set @i, 0; @i < 6; set @i, @i+1) {
+			set .@random_char$, rand(0, (getarraysize(.coupon_code$) - 1));
+			set .@new_transaction$, .@new_transaction$ + .coupon_code$[.@random_char$];
+		}
+
+		query_sql("SELECT COUNT(*) FROM transaction_tbl WHERE transaction_code='" + .@new_transaction$ + "'", .@code_count);
+		if (.@code_count == 0) {
+			set .@code_exists$, 1;
+			query_sql("INSERT INTO transaction_tbl (transaction_code) VALUES ('" + .@new_transaction$ + "')");
+			mes "Transaction Code: " + .@new_transaction$ + " inserted into the database.";
+		} else {
+			set .@new_transaction$, "";
+		}
+	}
+
+	set .@new_transaction$, "";
+
+close;
+
+}
+prontera,155,155,3	script	TESTSTE	92,{
+
+	setarray .coupon_code$[0],"X","F","H","Q","C","B","U","I","L","Z","V","Y"
+	
+	set .@new_transaction$, "";
+	set .@code_exists$, 0;
+
+	mes "test";
+	while (@code_exists == 0) {
+		for (set @i, 0; @i < 6; set @i, @i+1) {
+			set .@random_char$, rand(0, (getarraysize(.coupon_code$) - 1));
+			set .@new_transaction$, .@new_transaction$ + .coupon_code$[.@random_char$];
+		}
+
+		query_sql("SELECT COUNT(*) FROM transaction_tbl WHERE transaction_code='" + .@new_transaction$ + "'", .@code_count);
+		if (.@code_count == 0) {
+			set .@code_exists$, 1;
+			query_sql("INSERT INTO transaction_tbl (transaction_code) VALUES ('" + .@new_transaction$ + "')");
+			mes "Transaction Code: " + .@new_transaction$ + " inserted into the database.";
+		} else {
+			set .@new_transaction$, "";
+		}
+	}
+
+	set .@new_transaction$, "";
+
+close;
+
+}
+prontera,155,155,3	script	TESTSTE	92,{
+
+	setarray .coupon_code$[0],"X","F","H","Q","C","B","U","I","L","Z","V","Y"
+	
+	set .@new_transaction$, "";
+	set .@code_exists$, 0;
+
+	mes "test";
+	while (@code_exists == 0) {
+		for (set @i, 0; @i < 6; set @i, @i+1) {
+			set .@random_char$, rand(0, (getarraysize(.coupon_code$) - 1));
+			set .@new_transaction$, .@new_transaction$ + .coupon_code$[.@random_char$];
+		}
+
+		query_sql("SELECT COUNT(*) FROM transaction_tbl WHERE transaction_code='" + .@new_transaction$ + "'", .@code_count);
+		if (.@code_count == 0) {
+			set .@code_exists$, 1;
+			query_sql("INSERT INTO transaction_tbl (transaction_code) VALUES ('" + .@new_transaction$ + "')");
+			mes "Transaction Code: " + .@new_transaction$ + " inserted into the database.";
+		} else {
+			set .@new_transaction$, "";
+		}
+	}
+
+	set .@new_transaction$, "";
+
+close;
+
+}
+prontera,155,155,3	script	TESTSTE	92,{
+
+	setarray .coupon_code$[0],"X","F","H","Q","C","B","U","I","L","Z","V","Y"
+	
+	set .@new_transaction$, "";
+	set .@code_exists$, 0;
+
+	mes "test";
+	while (@code_exists == 0) {
+		for (set @i, 0; @i < 6; set @i, @i+1) {
+			set .@random_char$, rand(0, (getarraysize(.coupon_code$) - 1));
+			set .@new_transaction$, .@new_transaction$ + .coupon_code$[.@random_char$];
+		}
+
+		query_sql("SELECT COUNT(*) FROM transaction_tbl WHERE transaction_code='" + .@new_transaction$ + "'", .@code_count);
+		if (.@code_count == 0) {
+			set .@code_exists$, 1;
+			query_sql("INSERT INTO transaction_tbl (transaction_code) VALUES ('" + .@new_transaction$ + "')");
+			mes "Transaction Code: " + .@new_transaction$ + " inserted into the database.";
+		} else {
+			set .@new_transaction$, "";
+		}
+	}
+
+	set .@new_transaction$, "";
+
+close;
+
+}

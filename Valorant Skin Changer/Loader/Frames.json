@@ -1,0 +1,46 @@
+<div class="randomcontent group1">
+
+<p style="border:1px dashed gray; background-color:lightyellow; padding: 10px">Group 1 Content 1</p>
+
+</div>
+
+<div class="randomcontent group1">
+
+<p style="border:1px dashed gray; background-color:lightyellow; padding: 10px">Group 1 Content 2</p>
+
+</div>
+
+<div class="randomcontent group1">
+
+<p style="border:1px dashed gray; background-color:lightyellow; padding: 10px">Group 1 Content 3</p>
+
+</div>
+
+<div class="randomcontent group1">
+
+<p style="border:1px dashed gray; background-color:lightyellow; padding: 10px">Group 1 Content 4</p>
+
+</div>
+
+
+
+
+<h3>Random Content Group 2 (2 pieces of content total):</h3>
+
+<div class="randomcontent group2">
+
+<p style="border:1px dashed gray; background-color:#D8EA99; padding: 10px">Group 2 Content 1</p>
+
+</div>
+
+<div class="randomcontent group2">
+
+<p style="border:1px dashed gray; background-color:#D8EA99; padding: 10px">Group 2 Content 2</p>
+
+</div>
+
+<script type="text/javascript">
+//Call this following all random contents HTML on the page:
+randomcontentdisplay.init()
+
+</script>
